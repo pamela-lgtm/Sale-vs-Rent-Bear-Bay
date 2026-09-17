@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sell vs. Hold Analysis — 1738 Bear Bay Cove | Verandah Properties</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#008C82;--teal-deep:#00625B;--gold:#C9A227;--charcoal:#1A1A1A;
+--body:#1F1F1F;--muted:#5A5651;--strong:#0F0F0F;--line:#E2DED7;--paper:#FBFAF7;--panel:#F3F1EC;
+--red:#B5543C;--rose:#D4886F;--green:#4E8C6A;--slate:#6B7C8C}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);font-family:'Jost',system-ui,sans-serif;
+font-weight:400;font-size:16.5px;line-height:1.68}
+.wrap{max-width:900px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--charcoal)}
+h1{font-size:2.5rem;line-height:1.1;margin:0 0 .4rem}
+h2{font-size:1.85rem;line-height:1.2;margin:0 0 .85rem}
+h3{font-size:1.2rem;margin:1.4rem 0 .45rem}
+p{margin:0 0 1rem;max-width:74ch}
+b,strong{font-weight:600;color:var(--strong)}
+ul{margin:0 0 1rem;padding-left:1.2rem;max-width:74ch}
+li{margin-bottom:.5rem}
+
+.mast{background:var(--charcoal);color:#F5F3EE;padding:28px 0 30px}
+.brandline{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}
+.mark{width:33px;height:33px;border-radius:50%;background:var(--teal);color:#fff;
+font-family:'Cormorant Garamond',serif;font-size:21px;display:inline-flex;
+align-items:center;justify-content:center;flex:0 0 auto;transform:translateY(5px)}
+.brandname{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#F5F3EE}
+.mast .tag{color:#A9A49C;font-size:.83rem;margin-left:auto;text-align:right;line-height:1.5}
+.kicker{color:var(--gold);font-size:.9rem;margin:22px 0 4px}
+.mast h1{color:#FBFAF7;margin-top:4px}
+.mast .sub{color:#B8B2A8;margin:0;font-size:1rem}
+
+.rec{background:var(--teal);color:#fff;padding:32px 0 30px}
+.rec h2{color:#fff;font-size:1.5rem;margin-bottom:.3rem}
+.rec p{color:#D6EDEA;max-width:72ch}
+.rec .big{background:rgba(255,255,255,.12);border:none;border-left:4px solid var(--gold);
+border-radius:0 9px 9px 0;padding:22px 26px;margin:18px 0;
+font-family:'Cormorant Garamond',Georgia,serif;font-size:1.85rem;line-height:1.3;color:#fff;max-width:none}
+.rec b{color:#fff}
+
+
+section{padding:38px 0;border-top:1px solid var(--line)}
+.snum{color:var(--teal-deep);font-size:.9rem;margin:0 0 .2rem}
+h2 em{font-style:italic;font-weight:400;color:var(--teal-deep)}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;margin:0 0 20px}
+.fact{padding:14px 17px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fact .k{font-size:.79rem;color:var(--muted);margin-bottom:2px}
+.fact .v{font-weight:600;color:var(--strong)}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:1px;
+background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0 0 22px}
+.st{background:#fff;padding:18px}
+.st .v{font-family:'Cormorant Garamond',serif;font-size:2rem;line-height:1.05;color:var(--teal-deep)}
+.st .v.warn{color:var(--red)}
+.st .k{font-size:.85rem;color:var(--muted);margin-top:5px;line-height:1.45}
+
+.big{background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);
+border-radius:0 9px 9px 0;padding:24px 28px;margin:0 0 24px}
+.big .n{font-family:'Cormorant Garamond',serif;font-size:2.6rem;line-height:1;color:var(--red);margin-bottom:8px}
+.big p{margin-bottom:0}
+
+.pull{border-left:4px solid var(--gold);background:#fff;padding:19px 24px;
+border-radius:0 8px 8px 0;margin:0 0 22px}
+.pull p:last-child{margin-bottom:0}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:21px 24px;margin:0 0 20px}
+.box h3{margin-top:0}
+.box p:last-child,.box ul:last-child{margin-bottom:0}
+
+details{border:1px solid var(--line);border-radius:9px;background:#fff;margin:0 0 14px}
+summary{cursor:pointer;padding:15px 19px;font-weight:600;color:var(--teal-deep);
+list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.45rem;color:var(--gold);line-height:1;flex:0 0 auto}
+details[open] summary::after{content:"\2212"}
+summary:hover{background:var(--panel)}
+.dbody{padding:2px 19px 17px}
+.dbody > *:last-child{margin-bottom:0}
+
+.tscroll{overflow-x:auto;margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:.9rem;background:#fff;min-width:520px}
+th{background:var(--panel);color:var(--strong);font-weight:600;text-align:left;
+padding:10px 12px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr.hi td{background:#E6F3F1;font-weight:600}
+tr.bad td{background:#FBEDE9}
+tr.tot td{background:#F3F1EC;font-weight:600;border-top:2px solid var(--charcoal)}
+td.num,th.num{text-align:right;white-space:nowrap}
+caption{caption-side:bottom;text-align:left;color:var(--muted);font-size:.86rem;padding-top:9px}
+.neg{color:var(--red);font-weight:600}
+.pos{color:var(--teal-deep);font-weight:600}
+
+.bar{display:grid;grid-template-columns:150px 1fr 74px;gap:13px;align-items:center;margin-bottom:11px;font-size:.93rem}
+.track{background:var(--panel);border-radius:4px;height:26px;overflow:hidden}
+.fill{height:26px;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;
+padding-right:10px;color:#fff;font-weight:600;font-size:.86rem;white-space:nowrap}
+.fill.t{background:var(--teal)}.fill.g{background:var(--gold)}
+.fill.r{background:var(--red)}.fill.s{background:var(--slate)}.fill.gr{background:var(--green)}
+.bar .val{text-align:right;font-weight:600}
+.chart{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.chart h3{margin:0 0 4px}
+.chart .cap{font-size:.9rem;color:var(--muted);margin:0 0 18px}
+.src{font-size:.85rem;color:var(--muted);margin:14px 0 0;padding-top:13px;border-top:1px solid var(--line)}
+
+footer{background:var(--charcoal);color:#B8B2A8;padding:30px 0;font-size:.89rem}
+footer .sig{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);margin-bottom:8px}
+footer a{color:#8FD2CB}
+
+@media(max-width:720px){
+body{font-size:16px}h1{font-size:1.95rem}h2{font-size:1.45rem}
+.mast .tag{margin-left:0;width:100%;text-align:left}
+.rec .big{font-size:1.9rem}.big .n{font-size:2rem}
+.bar{grid-template-columns:104px 1fr 64px;gap:9px;font-size:.85rem}
+}
+@media print{body{background:#fff}section{page-break-inside:avoid}summary::after{content:""}}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="mark">V</span>
+      <span class="brandname">Verandah Properties, LLC</span>
+      <span class="tag">Sell vs. Hold Analysis<br>September 17, 2026</span>
+    </div>
+    <p class="kicker">Huntcliff Park at Meadow Woods · Orlando</p>
+    <h1>1738 Bear Bay Cove</h1>
+    <p class="sub">Orlando, FL 32824 · 3 bed / 2.5 bath · 2,203 sq ft · Built 2004 · 0.30 acre lot</p>
+  </div>
+</header>
+
+<div class="rec">
+  <div class="wrap">
+    <h2>Why we put this together</h2>
+    <p>You mentioned you may not renew the lease when it ends in November, given the maintenance costs and the vacancy this property has carried, and that you would be looking at other options.</p>
+    <p>We read that as selling. If we have read it wrong, please tell us and we will redirect — but rather than guess and wait, we went and did the work so you would have real numbers rather than an instinct.</p>
+    <p>So we ran it all the way through: what the home would realistically sell for, what it costs to sell, and what you would actually keep after capital gains and depreciation recapture.</p>
+    <div class="big">After 5½ years of ownership, you would likely walk away with about what you paid.</div>
+    <p>Based on what we found, our recommendation is to <b>renew the lease and defer the sale</b>. The reasoning is below, and the section on your own neighborhood is the one we would read first. If you decide to sell anyway, we will support that fully — but we wanted you to see this first.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section style="border-top:none">
+  <p class="snum">Section One</p>
+  <h2>The property</h2>
+  <div class="facts">
+    <div class="fact"><div class="k">Purchased</div><div class="v">June 2021 — $350,000</div></div>
+    <div class="fact"><div class="k">County market value 2026</div><div class="v">$392,770 <span class="neg">(−1.3%)</span></div></div>
+    <div class="fact"><div class="k">Current rent</div><div class="v">$2,000/mo</div></div>
+    <div class="fact"><div class="k">Lease expires</div><div class="v">Nov 19, 2026</div></div>
+    <div class="fact"><div class="k">Annual taxes</div><div class="v">$6,745</div></div>
+    <div class="fact"><div class="k">A/C</div><div class="v"><span class="neg">Original — 2004</span></div></div>
+    <div class="fact"><div class="k">Appliances</div><div class="v"><span class="neg">Original — 2004</span></div></div>
+    <div class="fact"><div class="k">Homestead exemption</div><div class="v">None</div></div>
+  </div>
+  <p>One thing worth noting before anything else. <b>The Orange County Property Appraiser lowered your market value by 1.3% this year</b>, from $397,810 to $392,770. That is the county saying values in your area went down, not up. It is the first decline in the four years shown on your record.</p>
+</section>
+
+<section>
+  <p class="snum">Section Two</p>
+  <h2>What you would actually net</h2>
+  <p>This is the number that matters most, and it is the one that surprised us.</p>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>If you sold at $400,000</th><th class="num">Amount</th></tr></thead>
+    <tbody>
+      <tr><td>Sale price</td><td class="num">$400,000</td></tr>
+      <tr><td>Selling costs — commission, title, doc stamps (~7%)</td><td class="num neg">−$28,000</td></tr>
+      <tr><td>Net proceeds</td><td class="num">$372,000</td></tr>
+      <tr><td>Depreciation recapture — $54,353 taxed at 25%</td><td class="num neg">−$13,588</td></tr>
+      <tr><td>Long-term capital gain — $22,000 at 15%</td><td class="num neg">−$3,300</td></tr>
+      <tr><td>Net investment income tax (3.8%)</td><td class="num neg">−$2,901</td></tr>
+      <tr><td>Massachusetts state tax (5%)</td><td class="num neg">−$3,818</td></tr>
+      <tr class="tot"><td>Estimated net to you</td><td class="num">$348,393</td></tr>
+      <tr class="bad"><td>You paid, June 2021</td><td class="num">$350,000</td></tr>
+    </tbody>
+    <caption>Estimates for discussion. Your CPA should confirm the tax figures — they depend on your income, filing status and actual cost basis.</caption>
+  </table>
+  </div>
+
+  <div class="big">
+    <div class="n">−$1,607</div>
+    <p>Five and a half years of ownership, and the sale would return slightly less than the purchase price. That is before accounting for inflation — in today's dollars, $350,000 from mid-2021 is worth roughly <b>$420,000</b>, so the real loss of purchasing power is closer to <b>$70,000</b>.</p>
+  </div>
+
+  <details>
+    <summary>Why the tax bill is so large on such a small gain</summary>
+    <div class="dbody">
+      <p>Because most of it isn't tax on a gain. It's <b>depreciation recapture</b>.</p>
+      <p>Every year the property has been a rental, you have taken a depreciation deduction — roughly $9,973 a year against the building portion of your basis. Over 5½ years that is about <b>$54,353</b>. Those deductions reduced your taxable rental income each year, which was a benefit.</p>
+      <p>When you sell, the IRS takes that back. Depreciation recapture is taxed at up to 25%, and unlike capital gains there is no favorable lower rate for holding longer. It is owed whether or not the property appreciated.</p>
+      <p>The result is that a property can sell for almost exactly what you paid and still generate a meaningful tax bill. That is what is happening here — over half of the estimated tax has nothing to do with profit.</p>
+      <p>This is also why timing matters less than owners expect. Waiting does not reduce recapture; it grows it. But waiting does allow the market to recover, and right now the market is the problem.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <p class="snum">Section Three</p>
+  <h2>What your own neighborhood <em>is telling you</em></h2>
+  <p>Zip-code averages can hide a great deal, so we looked at Huntcliff Park on its own. It is behaving very differently from the wider market, and the pattern is unusually clear.</p>
+
+  <div class="chart">
+    <h3>Huntcliff Park closed sales — price per square foot</h3>
+    <p class="cap">Sorted by home size, smallest to largest</p>
+    <div class="bar"><span>1751 Caribou Hunt · 1,469 sf</span><span class="track"><span class="fill t" style="width:100%">$228</span></span><span class="val">$335K</span></div>
+    <div class="bar"><span>14974 Huntcliff Pk · 1,659 sf</span><span class="track"><span class="fill t" style="width:100%">$229</span></span><span class="val">$380K</span></div>
+    <div class="bar"><span>14908 Huntcliff Pk · 1,659 sf</span><span class="track"><span class="fill t" style="width:99%">$226</span></span><span class="val">$375K</span></div>
+    <div class="bar"><span>14460 Huntcliff Pk · 1,624 sf</span><span class="track"><span class="fill g" style="width:85%">$194</span></span><span class="val">$315K</span></div>
+    <div class="bar"><span>14515 Huntcliff Pk · 1,941 sf</span><span class="track"><span class="fill g" style="width:90%">$206</span></span><span class="val">$400K</span></div>
+    <div class="bar"><span>1636 Caribou Hunt · 2,075 sf</span><span class="track"><span class="fill r" style="width:51%">$116</span></span><span class="val">$240K</span></div>
+    <div class="bar"><span><b>Your home · 2,203 sf</b></span><span class="track"><span class="fill s" style="width:79%">?</span></span><span class="val">—</span></div>
+    <p class="src">Orange County Property Appraiser recorded sales. Your home is larger than every one of them.</p>
+  </div>
+
+  <p>Two things jump out.</p>
+  <p><b>Price per square foot collapses as homes get bigger here.</b> The small three-bedrooms are clearing $226 to $229 a foot. The largest home to sell, at 2,075 square feet, brought <b>$116 a foot.</b> Your home is larger still.</p>
+  <p><b>That largest sale is the worst outcome in the entire 51-property market survey.</b> 1636 Caribou Hunt listed at $280,000 and sold for $240,000 — <b>85.7% of asking</b>, the lowest ratio of any sale in the zip code, against a market average of 97.9%.</p>
+
+  <div class="pull">
+    <p>And the home most like yours has not sold at all.</p>
+    <p><b>14697 Huntcliff Park Way</b> — 2,184 square feet, built 2004, nineteen square feet smaller than yours — has been listed at $488,995 for <b>160 days</b> and is still on the market.</p>
+    <p><b>1720 Bear Bay Cove</b>, on your own street, is asking $425,000 and has been sitting 42 days.</p>
+  </div>
+
+  <p>Neither of those homes has found a buyer. If you list in late November, they are what you are competing against, and they got there first.</p>
+
+  <details>
+    <summary>How the wider zip code compares</summary>
+    <div class="dbody">
+      <div class="tscroll">
+      <table>
+        <thead><tr><th></th><th class="num">Sold</th><th class="num">Still listed</th></tr></thead>
+        <tbody>
+          <tr><td>Median price per sq ft</td><td class="num">$207</td><td class="num">$220</td></tr>
+          <tr><td>Median price</td><td class="num">$455,000</td><td class="num">$442,650</td></tr>
+          <tr><td>Median days on market</td><td class="num">52</td><td class="num">72</td></tr>
+          <tr><td>Average days on market</td><td class="num">59</td><td class="num">102</td></tr>
+          <tr><td>Average sale-to-list</td><td class="num">97.9%</td><td class="num">—</td></tr>
+        </tbody>
+        <caption>51 properties surveyed in 32824, September 2026.</caption>
+      </table>
+      </div>
+      <p>Sellers are asking $220 a foot. Buyers are paying $207. And the homes that haven't sold have been listed nearly twice as long as the ones that did — 102 days against 59.</p>
+      <p>That gap is the definition of a market where sellers have not yet adjusted to what buyers will pay.</p>
+      <p>Worth noting too: the homes achieving the top prices — $475,000 to $535,000 — are almost all 2014 construction or newer. Buyers in this market are paying for new. Your home is 2004, with original systems.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <p class="snum">Section Four</p>
+  <h2>Why buyers aren't buying</h2>
+  <p>This is the part that explains everything above, and it got worse in the last three weeks.</p>
+
+  <div class="stats">
+    <div class="st"><div class="v warn">6.76%</div><div class="k">Freddie Mac 30-year average, Sept 10 — third straight weekly rise</div></div>
+    <div class="st"><div class="v warn">6.97%</div><div class="k">Bankrate national lender survey, Sept 16</div></div>
+    <div class="st"><div class="v warn">5.0%</div><div class="k">10-year Treasury yield — highest since 2007</div></div>
+    <div class="st"><div class="v warn">$40T</div><div class="k">US national debt, past this level for the first time</div></div>
+  </div>
+
+  <p>Mortgage rates track the 10-year Treasury, and the bond market is in a global selloff — driven by the conflict with Iran, higher energy costs feeding inflation, and a national debt that has passed $40 trillion for the first time. <b>The 10-year has not been at 5% since 2007.</b> Nineteen years.</p>
+  <p>The Federal Reserve raised rates again on September 16. Mortgage rates are at a one-year high and several forecasters expect them to stay elevated or move higher.</p>
+
+  <h3>So here is the buyer's actual math</h3>
+  <p>A buyer looking at your home at $400,000, with 20% down — that is <b>$80,000 in cash</b> — would pay:</p>
+
+  <div class="chart">
+    <h3>Buy versus rent, the same house</h3>
+    <p class="cap">Monthly cost to a buyer at 6.97%, 20% down, versus renting</p>
+    <div class="bar"><span>Buy — 10% down</span><span class="track"><span class="fill r" style="width:100%">$3,475/mo</span></span><span class="val"></span></div>
+    <div class="bar"><span>Buy — 20% down</span><span class="track"><span class="fill r" style="width:86%">$2,985/mo</span></span><span class="val"></span></div>
+    <div class="bar"><span>Rent it instead</span><span class="track"><span class="fill gr" style="width:58%">$2,000/mo</span></span><span class="val"></span></div>
+    <p class="src">Principal and interest, plus $562/mo property tax and $300/mo insurance. Excludes HOA dues and maintenance. The 10% down figure includes mortgage insurance.</p>
+  </div>
+
+  <div class="big">
+    <div class="n">$985 a month</div>
+    <p>That is what it costs a buyer to own your home rather than rent it — nearly <b>$12,000 a year</b> more, on top of $80,000 in cash they have to produce first. And they take on the roof, the A/C and the appliances the day they close.</p>
+  </div>
+
+  <p>This is the question every buyer in this market is asking, and there is no good answer to it right now. It is why homes are sitting.</p>
+
+  <details>
+    <summary>The full rate picture and where it came from</summary>
+    <div class="dbody">
+      <ul>
+        <li><b>Freddie Mac:</b> 6.76% on September 10, up from 6.71% the week before, and up from 6.35% a year ago. Three consecutive weekly increases.</li>
+        <li><b>Bankrate national survey:</b> 6.97% as of September 16.</li>
+        <li><b>Daily lender pricing:</b> 6.88% on September 10, a new one-year high, after a producer-price report pushed the 10-year Treasury up 12 basis points in a single session.</li>
+        <li><b>10-year Treasury:</b> crossed 5.0% — the highest level since 2007.</li>
+        <li><b>Fed:</b> raised rates at the September 15–16 meeting.</li>
+      </ul>
+      <p>Rates have climbed to roughly 6.85% since the conflict with Iran began in late February, as energy-driven inflation concerns and higher Treasury yields pushed borrowing costs up. Forecasters are split on where they go next, with one Reuters poll expecting 6.60% and 6.52% over the next two quarters, and other analysts expecting further increases.</p>
+      <p>What is not in dispute is the direction of the last three weeks, and that buyers are responding to it by staying out.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <p class="snum">Section Five</p>
+  <h2>What a November listing would actually cost</h2>
+  <p>Your lease ends November 19. If you list at the end of November, the property goes vacant and stays vacant until it closes.</p>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Monthly while vacant and listed</th><th class="num">Cost</th></tr></thead>
+    <tbody>
+      <tr><td>Rent no longer being collected</td><td class="num neg">$2,000</td></tr>
+      <tr><td>Property taxes</td><td class="num neg">$562</td></tr>
+      <tr><td>Insurance</td><td class="num neg">$300</td></tr>
+      <tr><td>Lawn, utilities, upkeep on a vacant home</td><td class="num neg">$270</td></tr>
+      <tr class="tot"><td>Total per month</td><td class="num">$3,132</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>The average home in your zip code that <b>has not yet sold</b> has been listed <b>102 days</b>. Add 30 to 45 days to close after an accepted offer.</p>
+  <p>We also want to name something directly, because you raised it. <b>This property already carried roughly fourteen weeks of vacancy in 2025</b> before the current lease began in November. That was expensive and we know it was frustrating.</p>
+  <p>A sale does not avoid that. It creates a longer version of it, in a worse season, with no rent at the end of it if the home does not sell.</p>
+
+  <div class="chart">
+    <h3>What that looks like in dollars</h3>
+    <p class="cap">Vacancy and carrying cost, if the sale takes</p>
+    <div class="bar"><span>3 months</span><span class="track"><span class="fill g" style="width:50%">$9,396</span></span><span class="val"></span></div>
+    <div class="bar"><span>4 months</span><span class="track"><span class="fill r" style="width:67%">$12,528</span></span><span class="val"></span></div>
+    <div class="bar"><span>6 months</span><span class="track"><span class="fill r" style="width:100%">$18,792</span></span><span class="val"></span></div>
+    <p class="src">A November listing that runs to the zip-code average would carry through the slowest part of the year — December, January and February.</p>
+  </div>
+
+  <div class="pull">
+    <p>Six months of carrying an empty house costs more than eleven times the $1,607 shortfall on the sale itself. If it does not sell, you have spent the money and still own the property — now with a year of vacancy behind it and a rental market that has moved further down.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Six</p>
+  <h2>The condition problem, stated plainly</h2>
+  <p>We understand the motivation here is maintenance cost, so we want to be direct about how that interacts with selling.</p>
+  <p>Your file shows the <b>air conditioning system and the appliances are original to 2004.</b> That is 22 years. Both are well past typical service life.</p>
+  <p>In this market that matters more than it used to, for two reasons.</p>
+  <ul>
+    <li><b>Buyers are paying for updated homes.</b> The top sales in your zip code — $475,000 to $535,000 — are almost all 2014 construction or newer. At 2004 with original systems, your home competes on price rather than condition.</li>
+    <li><b>Insurance underwriting has tightened.</b> Buyers frequently cannot get affordable coverage on older systems and roofs, which means they cannot get a loan, which means they cannot buy at any price you would accept.</li>
+  </ul>
+
+  <div class="pull">
+    <p>So selling to avoid maintenance expense tends to produce the opposite. The buyer's inspector finds the 2004 A/C, and you either replace it, credit it, or lose the buyer. The cost arrives anyway — just under time pressure, at the worst possible moment, and with a price reduction attached.</p>
+  </div>
+
+  <p>Replacing the A/C on your own schedule costs what an A/C costs. Replacing it under a contract deadline, while a listing ages, costs considerably more and buys you nothing.</p>
+</section>
+
+<section>
+  <p class="snum">Section Seven</p>
+  <h2>What we recommend</h2>
+
+  <div class="box">
+    <h3>Renew the lease and defer the sale</h3>
+    <p>Your tenant is in place through November 19. Renewing keeps $2,000 a month coming in, avoids the $3,132 monthly bleed of a vacant listing, and keeps you out of the worst selling season of the year.</p>
+    <p>It also means you are not selling into a market where the county has just marked your value down, the comparable home on the next street has sat 160 days, and mortgage rates are at a one-year high.</p>
+  </div>
+
+  <div class="box">
+    <h3>Budget the A/C as a planned replacement, not an emergency</h3>
+    <p>It is 22 years old. It is going to need replacing whether you sell or hold, and the only question is whether you choose the timing or a buyer's inspector chooses it for you.</p>
+    <p>Doing it on your terms costs less, removes the single biggest objection at sale, and protects you from an emergency replacement with a tenant in place.</p>
+  </div>
+
+  <div class="box">
+    <h3>Revisit the sale when the market gives you a reason</h3>
+    <p>The things that would change this analysis are specific and observable: mortgage rates easing, the Huntcliff Park inventory clearing, and the county's assessed value turning back up. We watch all three and will tell you when they move.</p>
+    <p>Nothing about this recommendation is permanent. It is about not selling into the worst conditions we have seen in this neighborhood.</p>
+  </div>
+
+  <p>We recognize the maintenance costs are real and frustrating, and we are not dismissing them. But the arithmetic says selling now converts a frustration into a loss — and it does not actually remove the A/C from your responsibility, it just moves it into a negotiation you will not control.</p>
+</section>
+
+<section>
+  <p class="snum">Section Eight</p>
+  <h2>If selling does become your plan</h2>
+  <p>We recently shared some general information about planning ahead if you ever decide to sell a rental property. Since then, Verandah Properties has added a full-service <b>Sales Division</b> — largely because many of our existing clients asked us to provide a simpler, more coordinated path from property management to a future sale.</p>
+  <p>Our Sales Division is led by <b>Rebeca "Becky" Lima</b>. If selling ever becomes part of your plans, you are welcome to speak with Becky, learn about her recommended strategy, and decide whether Verandah's sales services are the right fit for you. There is absolutely no obligation. The decision of whether to sell, and whom to hire, will always remain entirely yours.</p>
+
+  <div class="box">
+    <h3>What selling through Verandah would look like</h3>
+    <p>The primary benefit is continuity. Our sales and management teams work together to:</p>
+    <ul>
+      <li>Develop a timeline around the existing lease, tenant communication, property access and market preparation.</li>
+      <li>Coordinate the transition from rental management to sales without requiring you to manage a separate handoff between companies.</li>
+      <li>Maintain organized access to property records, inspection reports, vendor history and other information already in our care.</li>
+      <li>Continue overseeing the vacant property during the sales period so maintenance, vendor access and lawn-care scheduling stay coordinated and the home remains show-ready.</li>
+      <li><b>Waive Verandah's management fee during the vacant sales period.</b> You would remain responsible for the actual cost of lawn care, repairs, utilities or other third-party services, but Verandah would provide the ongoing coordination and oversight without an additional management charge.</li>
+    </ul>
+  </div>
+
+  <p>You are, of course, also free to select another licensed sales agent.</p>
+  <p>Because sales representation and property management involve overlapping responsibilities — including tenant communication, access, maintenance decisions, security-deposit administration and responsibility for the property's condition — Verandah is not able to continue managing a property once it is listed for sale by another brokerage.</p>
+  <p>If you choose that route, we will still make the transition as orderly as possible. We will coordinate the conclusion of management in accordance with your Property Management Agreement, transfer the security deposit and applicable records, and ensure your inspection reports and other available documents remain accessible through your Owner Portal.</p>
+
+  <div class="pull">
+    <p>There is nothing you need to do now. We simply want you to know this option exists should your plans change — and that you are welcome to explore it without pressure or obligation.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Nine</p>
+  <h2>In summary</h2>
+  <ul>
+    <li>A sale at $400,000 nets roughly <b>$348,400</b> after costs and taxes, against <b>$350,000</b> paid in 2021 — essentially break-even nominally, and about $70,000 behind in purchasing power.</li>
+    <li>Over half the tax bill is <b>depreciation recapture</b>, which is owed whether or not the property gained value.</li>
+    <li>In Huntcliff Park, larger homes are selling worst. The largest recent sale brought <b>$116 a foot</b> and closed at <b>85.7% of asking</b> — the weakest result in the entire zip-code survey.</li>
+    <li>The home closest in size to yours has been listed <b>160 days</b> without selling. Another on your own street has sat 42 days.</li>
+    <li>Mortgage rates are at a one-year high and the 10-year Treasury is at its highest since <b>2007</b>. Buying your home costs a buyer <b>$985 a month more</b> than renting it, plus $80,000 down.</li>
+    <li>A vacant November listing costs <b>$3,132 a month</b>. At the zip-code average time on market, that is roughly <b>$12,500 to $18,800</b> before a sale closes.</li>
+    <li>The county reduced your market value <b>1.3%</b> this year — the first decline on your record.</li>
+  </ul>
+
+  <div class="pull">
+    <p>Our recommendation is to renew the lease, plan the A/C replacement on your own timing, and revisit the sale when the market offers a reason to. We would rather tell you this than help you sell into it.</p>
+  </div>
+
+  <p style="margin-top:22px">We are glad to walk through any part of this on a call, and we would encourage you to share the tax section with your CPA before making a decision.</p>
+  <p>As always, it is a pleasure serving you. If you would ever like an introduction to Becky, or simply want to discuss the timing and considerations involved in a future sale, we are here to help.</p>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="sig">Curating Orlando's Finest Rental Portfolio</div>
+    <p><b>Verandah Properties, LLC</b><br>
+    Pamela Syvertson, Owner &amp; Broker · License CQ1048619 · <a href="tel:4078550331">407-855-0331</a></p>
+    <p style="font-size:.84rem;color:#8C877F;max-width:74ch">Market data from Stellar MLS and the Orange County Property Appraiser as of September 2026, deemed reliable but not guaranteed. Mortgage rate figures from Freddie Mac, Bankrate and Optimal Blue, September 2026. This is an opinion of value and general analysis, not an appraisal. Tax figures are estimates for discussion only and are not tax advice — please confirm with your CPA, as the actual liability depends on your income, filing status, cost basis and any capital improvements not reflected here.</p>
+  </div>
+</footer>
+
+</body>
+</html>
